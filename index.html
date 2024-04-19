@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>JS Biglietto Treno DOM</title>
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        
+        <header>
+            <h1>
+                JS Biglietto Treno DOM
+            </h1>
+        </header>
+
+        <main>
+            
+            <div>
+                <form>
+                    <div>
+                        <div>
+                            <label for="km">
+                                <strong>
+                                    KM da percorrere <span style="color: red;">*</span>
+                                </strong>
+                            </label>
+                        </div>
+                        <input type="number" id="km" name="km" placeholder="Quanti KM devi percorrere?" required min="5" max="1000">
+                    </div>
+                    <div>
+                        <div>
+                            <label for="age">
+                                <strong>
+                                    Età <span style="color: red;">*</span>
+                                </strong>
+                            </label>
+                        </div>
+                        <input type="number" id="age" name="age" placeholder="Quanti anni hai?" required min="10" max="150">
+                    </div>
+    
+                    <div>
+                        <!--
+                            <button type="button">
+                                Questo NON sottomette
+                            </button>
+
+                            <button>
+                                Questo sottomette
+                            </button>
+
+                            <button type="submit">
+                                Anche questo sottomette
+                            </button>
+                        -->
+
+                        <button id="calc-button">
+                            Calcola prezzo del biglietto
+                        </button>
+                    </div>
+                </form>
+            </div>
+
+            <div>
+                <h3 id="price-result"></h3>
+            </div>
+
+        </main>
+
+        <!-- JS -->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
